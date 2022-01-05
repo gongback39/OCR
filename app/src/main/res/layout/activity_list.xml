@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListActivity">
+
+    <TextView
+        android:id="@+id/mark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="왓어유"
+        android:textAlignment="textStart"
+        android:background="@drawable/mark_style"
+        android:textSize="30dp"
+        android:textColor="#FFFFFF"
+        >
+    </TextView>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mark">
+    </ListView>
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bar_style"
+        >
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:textColor="#000000"
+            android:textSize="12dp">
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/reset"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/reset"
+            android:background="#0003DAC5"/>
+
+        <ImageButton
+            android:id="@+id/delete"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="#0003DAC5"
+            app:srcCompat="@drawable/delete" />
+
+        <ImageButton
+            android:id="@+id/add"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="#0003DAC5"
+            app:srcCompat="@drawable/plus" />
+
+    </LinearLayout>
+
+</RelativeLayout>
